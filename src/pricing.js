@@ -18,7 +18,7 @@ function quote(quantities, coupon) {
   const taxableCents = subtotalCents - discountCents;
 
   // Calculate tax (8% of taxable amount), round to nearest cent
-  const taxCents = Math.floor(taxableCents * 0.08);
+  const taxCents = Math.round(taxableCents * 0.08);
   const totalCents = taxableCents + taxCents;
 
   // Convert to dollars
