@@ -53,7 +53,7 @@ document.getElementById('apply').addEventListener('click', () => {
   currentCoupon = document.getElementById('coupon').value.trim();
   const msg = currentCoupon ? "Coupon applied" : "No coupon applied";
   document.getElementById('coupon-msg').textContent = msg;
-  // updateQuote();
+  updateQuote();
 });
 
 loadItems();
