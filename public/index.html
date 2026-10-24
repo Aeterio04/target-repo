@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Demo Shop</h1>
+    
+    <div id="items"></div>
+    
+    <div class="coupon-section">
+      <input type="text" id="coupon" data-testid="coupon-input" placeholder="Enter coupon code">
+      <button id="apply" data-testid="apply-coupon">Apply</button>
+      <p id="coupon-msg" data-testid="coupon-message">No coupon applied</p>
+    </div>
+    
+    <div class="summary">
+      <div class="row">
+        <span>Subtotal:</span>
+        <span data-testid="subtotal">$0.00</span>
+      </div>
+      <div class="row">
+        <span>Discount:</span>
+        <span data-testid="discount">$0.00</span>
+      </div>
+      <div class="row">
+        <span>Tax (8%):</span>
+        <span data-testid="tax">$0.00</span>
+      </div>
+      <div class="row total">
+        <span>Total:</span>
+        <span data-testid="total">$0.00</span>
+      </div>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
