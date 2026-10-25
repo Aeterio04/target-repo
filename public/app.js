@@ -14,7 +14,7 @@ function renderItems() {
   container.innerHTML = Object.entries(items)
     .map(([id, item]) => `
       <div class="item-row">
-        <span class="item-name">${item.name} - $${item.cost.toFixed(2)}</span>
+        <span class="item-name">${item.name} - $${item.price.toFixed(2)}</span>
         <input type="number" 
                id="${id}" 
                data-testid="qty-${id}" 
