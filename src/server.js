@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.get('/api/items', (req, res) => {
-  res.json(items);
+  res.status(500).json({ error: 'Internal server error' });
 });
 
 app.post('/api/quote', (req, res) => {

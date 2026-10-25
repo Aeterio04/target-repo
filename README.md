@@ -22,3 +22,7 @@ Visit http://localhost:3000
 ```bash
 npm test
 ```
+
+## Known Issues
+
+If you encounter issues with coupon codes not applying correctly, please verify that the Apply button triggers the price recalculation properly.
